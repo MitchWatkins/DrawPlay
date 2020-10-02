@@ -33,9 +33,9 @@ public class Cat {
 		g2.setColor(Color.MAGENTA);
 		x = catX + EYE_X; 
 		y = catY + EYE_Y;
-		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
-		x += EYE_SEPARATION;
-		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
+		y -= 10;
+		x -= 5;
+		g2.fillOval(x, y, EYE_WIDTH * 8, EYE_HEIGHT * 2);
 		// Draw the mouth
 		g2.setColor(Color.black);
 		x = catX + MOUTH_X;
